@@ -1,0 +1,651 @@
+/*------- COLOR PALETTE BEGIN --------*/
+:root {
+    --primary-color: #142a63;
+    --primary-color-opacity: #142a6347;
+    --secondary-color: #FAA515;
+    --accent-color: #8995B1;
+    --text-color: #FFFFFF;
+    --accent2-color:#E6F6FC;
+    }
+
+ /*------- COLOR PALETTE END --------*/
+
+ /*------- IMPORTING FONTS BEGIN --------*/
+
+@font-face {
+    font-family: 'Product-Sans';
+    src: url('../../fonts/product-sans/Product\ Sans\ Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Product-Sans';
+    src: url('../../fonts/product-sans/Product\ Sans\ Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nunito-sans';
+    src: url('../../fonts/nunito-sans/NunitoSans-Light.ttf') format('truetype');
+    font-weight: light;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Nunito-sans';
+    src: url('../../fonts/nunito-sans/NunitoSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*------- IMPORTING FONTS END --------*/
+
+
+
+
+body{
+    background-color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito-sans', sans-serif;
+    font-weight: normal;
+   
+   
+}
+
+/* ----- NAVBAR SECTION BEGIN -----*/
+
+header{
+    width: 100%;
+    z-index: 17;
+    position: fixed;
+    background-color: var(--primary-color);
+  
+    
+}
+
+.logo {
+    display:flex;
+   
+}
+
+.logo img{
+    
+    width: 170px;
+    margin-top: 1rem;
+   
+}
+
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    height: 90px;
+     margin:0px 10rem 0px 10rem; 
+}
+
+.navlinks ul{
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  
+}
+
+.navlinks ul li a {
+  list-style: none;
+  font-size: 1.2rem;
+  color: var(--text-color);
+  text-decoration: none;
+  
+  font-family: 'Nunito-sans', sans-serif;
+  font-weight: normal;
+ 
+}
+
+/* --------- NAVBAR SECTION END -------*/
+
+
+
+/*------- HERO SECTION BEGIN --------*/
+
+#hero {
+    height: 60vh;
+    background-image: url(./images/profTax-herobg.svg);
+    background-size: 100% auto;
+    background-position: center calc(50% + 40px);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    padding: 0 20px;
+    position: relative;
+}
+
+.container{
+    max-width: 67%;
+    width: 100%;
+    display: flex;
+}
+
+.hero-container {
+   
+   display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.hero-container .hero-context {
+   
+    max-width: 390px; 
+    width: 100%;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+.hero-context h1{
+    font-family: 'Product-Sans' ;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.hero-context p {
+    opacity: 50%;
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+}
+
+.hero-img img{
+    margin-top: 5rem;
+    width: 30rem;
+    margin-left: -12rem;
+}
+
+/*------- HERO SECTION END --------*/
+
+
+.service-section {
+    padding: 60px 20px;
+    background-color: var(--text-color);
+    text-align: center;
+  }
+  
+  .service-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+
+  }
+
+  .service-header img{
+    width: 8rem;
+  }
+  
+  .service-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+    font-family: 'Product-Sans';
+    margin-top: 10px;
+    font-weight: normal;
+  }
+  
+  .service-icon {
+    width: 60px;
+    height: auto;
+  }
+  
+  .service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .service-card {
+    flex: 0 1 calc(45% - 20px);
+    background-color: var(--text-color);
+    border: 1px solid #c3c2c2;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 24rem;
+    cursor: pointer;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-card h3 {
+    font-family: 'Product-Sans';
+    color: var(--primary-color);
+    font-weight: normal;
+    
+    font-size: 2rem;
+
+   
+  }
+
+  .service-card span{
+    margin-right: 1rem;
+   
+  }
+
+  .service-card span img{
+    width: 2.4rem;
+  }
+  
+  .service-card p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 40px;
+    width: 80%;
+    color: var(--accent-color);
+    font-family: 'Nunito-sans';
+
+    
+  }
+  
+  .service-card a {
+    
+    color: #f4a261;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95rem;
+    font-family: 'Product-Sans';
+    font-weight: normal;
+  }
+
+
+
+  /* TRUST SECTION */
+
+  .header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+  .header h1{
+    font-family: 'Product-Sans';
+    font-weight: normal;
+    font-size: 2rem;
+    color: var(--primary-color);
+   
+  }
+
+  .logo-container h1 {
+    font-family: 'Product-Sans';
+    font-weight: normal;
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    color: #0b2c74;
+  }
+
+  .logo-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 40px 20px;
+    align-items: center;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 140px;
+  }
+
+  .logo img {
+    max-height: 40px;
+    margin-bottom: 3rem;
+    object-fit: contain;
+  }
+  
+  /* -------- INSIGHTS SECTION BEGIN ------*/
+     
+  #insights {
+    display: flex;
+    justify-content: center;
+   
+     background-color: var(--text-color);
+     margin: 0rem;
+     height: auto;
+     /* padding: 60px 0; */
+   }
+   
+   .insights-container{
+     
+     width: 100%;
+     
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+    
+     max-width: 1200px;;
+   }
+
+   .insights-container h2{
+     text-align: center;
+ font-family: 'Product-Sans' ;
+ font-weight: normal; 
+ font-size: 2rem;
+ color: #0a1a4f;
+ margin-top: 40px;
+ 
+
+   }
+
+   .insights-container p{
+     text-align: center;
+     font-family: 'Nunito-sans';
+ font-weight: light; 
+  margin-top: -1rem;
+
+   }
+
+   .card-section {
+     display: flex;
+     gap: 20px;
+     justify-content: center;
+     padding: 40px;
+     background-color: #fff;
+   }
+   
+   .card {
+     background-color: #f4f6fa;
+     border-radius: 12px;
+     box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+     overflow: hidden;
+     max-width: 300px;
+     position: relative;
+     transition: transform 0.3s ease;
+   }
+
+   .card-section .card p{
+     margin-top: 10px;
+     text-align: start;
+   }
+   
+   
+   .card:hover {
+     transform: translateY(-5px);
+   }
+   
+   .card img {
+     width: 100%;
+     height: auto;
+     display: block;
+     /* margin: 1rem; */
+     
+   }
+   
+   .badge {
+     position: absolute;
+     top: 12px;
+     left: 12px;
+     background-color: #0a1a4f;
+     color: white;
+     font-size: 0.9rem;
+     padding: 5px 10px;
+     border-radius: 6px;
+     font-weight: bold;
+   }
+   
+   .card-body {
+     padding: 20px;
+   }
+   
+   .card-body .text {
+     
+     font-size: 1rem;
+     color: #333;
+     margin-bottom: 10px;
+   }
+   
+   .card-body .read-more {
+     color: #f9a825;
+     text-decoration: none;
+     
+     font-size: 0.95rem;
+     text-decoration: underline;
+   }
+   
+   .card-body .read-more:hover {
+     text-decoration:none;
+     font-weight: bold;
+   }
+   
+   
+   /* .insights-container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+      max-width: 1200px; 
+     background-color: #FAA515;
+    
+  
+   }
+
+   .insights-container h1{
+     color: var(--primary-color);
+     font-family: 'Product-Sans' ; 
+     font-size: 2rem;
+     font-weight: normal;
+     margin-bottom: 2.5rem;
+
+     
+ 
+  } */
+
+ /* -------- TRUST SECTION END ------*/
+
+ #cta {
+     display: flex;
+     justify-content: center;
+     padding-top: 2rem;
+      background-color: var(--primary-color);
+      margin: 0rem;
+      height: auto;
+      
+      /* padding: 60px 0; */
+    }
+    
+    .cta-container{
+      
+      width: 100%;
+      justify-content: center;
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+     
+      max-width: 64%;
+    }
+
+    .cta-content{
+     padding: 0px;
+     margin: 0px;
+     color: var(--text-color);
+     margin-bottom: 4rem;
+    }
+
+    .cta-content h2{
+     font-family: 'Product-Sans' ;
+     font-weight: normal;
+     font-size: 2.7rem;
+    } 
+
+    .cta-content .cta-btn{
+    
+        
+         background-color: var(--secondary-color) ;
+         width: 14rem;
+         border: none;
+         height: 3.5rem;
+         border-radius: 5px;
+         font-size: 1.2rem;
+         font-family: 'Product-Sans' ;
+         color: var(--text-color);
+         cursor: pointer;
+    }
+
+
+
+    #footer{
+    
+     display: flex;
+     justify-content: center;
+     background-color: var(--text-color);
+     padding-bottom: 2rem;
+     padding-top: 2rem;;
+
+    }
+
+    .footer-container{
+     
+     margin-top: 3rem;
+     width: 100%;
+     max-width: 1200px;
+     display: flex;
+     justify-content: space-between;
+     padding-left: 40px 60px;
+     align-items: flex-start;
+     flex-wrap: wrap;
+     gap: 30px;
+    }
+
+    .footer-left {
+     flex: 1;
+     min-width: 250px;
+   }
+   
+   .logo {
+     
+     display: flex;
+     align-items: start;
+     align-content: start;
+     gap: 10px;
+     padding: -0x;
+   }
+   
+   .footer-left .logo img {
+     height: 40px;
+    
+   }
+   
+   
+   
+   .footer-left p {
+     margin: 10px 0;
+     color: #333;
+     font-size: 14px;
+   }
+
+   .contact-info{
+     margin-top: 2rem;
+   }
+
+   .contact-info p {
+     font-family: 'Product-Sans' ;
+     font-weight: normal;
+     color: var(--primary-color);
+   }
+   
+   .contact-info i {
+     margin-right: 8px;
+     color: #0a1a4f;
+   }
+   
+   .contact-info a {
+     text-decoration: none;
+     color: #0a1a4f;
+     font-weight: bold;
+   }
+   
+   .footer-center {
+     flex: 1;
+     display: flex;
+     justify-content: center;
+     min-width: 250px;
+     flex-direction: column;
+     align-items: end;
+   }
+   
+   .footer-nav {
+     list-style: none;
+     padding: 0;
+     display: flex;
+     gap: 25px;
+     flex-wrap: wrap;
+   }
+   
+   .footer-nav li a {
+     color: #333;
+     text-decoration: none;
+     font-size: 16px;
+   }
+   
+   .footer-nav li a:hover {
+     text-decoration: underline;
+   }
+   
+   .footer-right {
+     flex: 1;
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+     min-width: 150px;
+   }
+   
+   .social-icons {
+     margin-top: 2rem;
+     display: flex;
+     gap: 15px;
+     justify-content: center;
+     align-items: center;
+   }
+   
+   .social-icons a {
+      display: flex; 
+      justify-content: center;
+     background-color: #f2f4f8;
+     color: #0a1a4f;
+     padding: 10px;
+     border-radius: 50%;
+     font-size: 16px;
+     transition: background 0.3s ease;
+   }
+
+   .social-icons img{
+     width: 60%;
+   }
+   
+   .social-icons a:hover {
+     background-color: #e0e0e0;
+   }
+
+    
